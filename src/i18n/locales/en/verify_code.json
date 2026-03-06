@@ -1,0 +1,7 @@
+{
+  "title": "Enter verification code",
+  "subtitle1": "Enter the 6-digit code we sent to your email",
+  "subtitle2": "to complete the verification process",
+  "resendCode": "Resend code",
+  "resendCodeByTime": "Resend code in {{time}}s"
+}

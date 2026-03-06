@@ -1,0 +1,22 @@
+{
+  "title": "Profile information",
+  "email": {
+    "label": "Email"
+  },
+  "phoneNumber": {
+    "label": "Phone number"
+  },
+  "theme": {
+    "label": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "toggle": "Toggle {{mode}}"
+  },
+  "action": {
+    "logout": "Logout"
+  },
+  "changeLanguage": {
+    "title": "Language",
+    "action": "Change"
+  }
+}

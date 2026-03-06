@@ -1,0 +1,118 @@
+{
+  "NSOrder": {
+    "EOrderType": {
+      "XB": "Xuất bán",
+      "XM": "Xuất mẫu",
+      "XKG": "Xuất ký gửi",
+      "NTH": "Thu hồi",
+      "XDT": "Xuất đổi trả",
+      "PASSIVENTH": "Yêu cầu thu hồi"
+    },
+
+    "EOrderApprovalStatus": {
+      "PendingFreight": "Chờ duyệt phí vận chuyển",
+      "PendingPrice": "Chờ duyệt giá",
+      "PendingCredit": "Chờ duyệt công nợ",
+      "PendingApproval": "Chờ duyệt",
+      "Completed": "Hoàn tất",
+      "FreightRejected": "Từ chối phí vận chuyển",
+      "PriceRejected": "Từ chối giá",
+      "RejectedCredit": "Từ chối công nợ"
+
+    },
+    "EOrderMobileDisplayStatus": {
+      "Created": "Thêm mới",
+      "Approved": "Tạo mới thành công",
+      "AwaitingShipping": "Chờ xuất kho",
+      "Shipped": "Đã xuất kho",
+      "Delivering": "Đang giao hàng",
+      "Completed": "Hoàn tất",
+      "Cancelled": "Hủy"
+    },
+    "EOrderStatus": {
+      "Pending": "Chờ duyệt",
+      "Opperated": "Vận hành",
+      "Approved": "Đã duyệt"
+    },
+    "EDeliveryMethod": { 
+      "DELIVERY": "Giao hàng", 
+      "PICKUP": "Lấy tại kho"
+    },
+    "EDeliveryMethodV2": { 
+      "DELIVERY": "Đến lấy hàng", 
+      "PICKUP": "Trả tại kho"
+    }, 
+    "EShippingMethod": {
+      "XA": "Xá", 
+      "PALLET": "Pallet"
+    },
+    "EShipmentPlanStatus": {
+      "PendingApproval": "Chờ duyệt phí vận chuyển",
+      "ApprovalRejected": "Từ chối phí vận chuyển",
+      "Approved": "Đã duyệt",
+      "Shipped": "Đang giao hàng",
+      "Cancelled": "Hủy",
+      "PartiallyDelivered": "Giao một phần",
+      "FullyDelivered": "Giao toàn phần"
+    },
+    "EShipmentPlanMobileDisplayStatus": {
+      "PendingApproval": "Chờ duyệt",
+      "ApprovalRejected": "Từ chối duyệt",
+      "Approved": "Tạo mới thành công",
+      "AwaitingShipping": "Chờ xuất kho",
+      "Shipped": "Đã xuất kho",
+      "Delivering": "Đang giao hàng",
+      "Completed": "Hoàn tất",
+      "Cancelled": "Hủy"
+    },
+    "EOrderStatusV2": {
+      "Created": "Đã tạo",
+      "Inprocess": "Đang xử lý",
+      "Completed": "Hoàn tất",
+      "Cancelled": "Hủy",
+      "PartiallyDelivered": "Giao một phần",
+      "FullyDelivered": "Giao toàn phần",
+      "SampleExported": "Đã xuất mẫu",
+      "SamplePasted": "Đã dán mẫu"
+    }
+  },
+  "NSReturnOrder": {
+    "EReturnOrderStatus": {
+      "PendingApproval": "Chờ duyệt",
+      "InProgress": "Đang xử lý",
+      "PartialReturn": "Thu hồi một phần",
+      "Returned": "Đã thu hồi",
+      "Cancel": "Hủy"
+    },
+    "EReturnType": {
+      "CustomerReturn": "Khách trả hàng",
+      "QualityClaim": "Khiếu nại chất lượng",
+      "ReturnBroken": "Thu hồi bể vỡ"
+    }
+  },
+  "NSShipment": {
+    "EShipmentStatus": {
+      "InProgress": "Đang xử lý",
+      "Cancelled": "Đã hủy",
+      "Completed": "Hoàn tất",
+      "PartiallyDelivered": "Giao một phần",
+      "FullyDelivered": "Giao toàn phần",
+      "Delivered": "Đã giao",
+      "Shipped": "Đang giao",
+      "New": "Mới",
+      "Created": "Đã tạo",
+      "Approved": "Đã duyệt"
+    },
+    "EShipmentMobileDisplayStatus": {
+      "AwaitingShipping": "Chờ xuất kho",
+      "Shipped": "Đã xuất kho",
+      "Delivering": "Đang giao hàng",
+      "Completed": "Hoàn tất",
+      "Cancelled": "Hủy"
+    },
+    "EShipmentDeliveryMethod": {
+      "Delivery": "Giao hàng",
+      "Pickup": "Lấy hàng"
+    }
+  }
+}

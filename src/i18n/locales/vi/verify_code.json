@@ -1,0 +1,7 @@
+{
+  "title": "Nhập mã xác thực",
+  "subtitle1": "Nhập mã 6 chữ số mà chúng tôi đã gửi đến email",
+  "subtitle2": "để hoàn tất quá trình xác thực",
+  "resendCode": "Gửi lại mã",
+  "resendCodeByTime": "Gửi lại mã trong {{time}}s"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Welcome back!",
+  "subtitle": "Login to get started",
+  "action": {
+    "login": "Login",
+    "forgotPassword": "Forgot Password"
+  },
+  "form": {
+    "email": {
+      "label": "Email",
+      "placeholder": "Enter email"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Enter password"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "NSOrder": {
+    "EOrderType": {
+      "XB": "Sales Order",
+      "XM": "Sample Export",
+      "XKG": "Consignment",
+      "NTH": "Return",
+      "XDT": "Exchange Return",
+      "PASSIVENTH": "Recovery Request"
+    },
+    "EOrderApprovalStatus": {
+      "PendingFreight": "Pending freight approval",
+      "PendingPrice": "Pending price approval",
+      "PendingCredit": "Pending credit approval",
+      "PendingApproval": "Pending approval",
+      "Completed": "Completed",
+      "FreightRejected": "Freight rejected",
+      "PriceRejected": "Price rejected",
+      "RejectedCredit": "Rejected credit"
+    },
+    "EOrderStatus": {
+      "Pending": "Pending",
+      "Opperated": "Operating",
+      "Approved": "Approved"
+    },
+    "EShipmentPlanStatus": {
+      "PendingApproval": "Pending freight approval",
+      "ApprovalRejected": "Freight rejected",
+      "Approved": "Approved",
+      "Shipped": "Shipping",
+      "Cancelled": "Cancelled",
+      "PartiallyDelivered": "Partially delivered",
+      "FullyDelivered": "Fully delivered"
+    },
+    "EShipmentPlanMobileDisplayStatus": {
+      "PendingApproval": "Pending freight approval",
+      "ApprovalRejected": "Freight rejected",
+      "Approved": "Approved",
+      "AwaitingShipping": "Awaiting Shipping",
+      "Shipped": "Shipped",
+      "Delivering": "Delivering",
+      "Completed": "Completed",
+      "Cancelled": "Cancelled"
+    },
+    "EOrderStatusV2": { 
+      "Created": "Created",
+      "Inprocess": "In process",
+      "Completed": "Completed",
+      "Cancelled": "Cancelled",
+      "PartiallyDelivered": "Partially delivered",
+      "FullyDelivered": "Fully delivered",
+      "SampleExported": "Sample exported",
+      "SamplePasted": "Sample pasted"
+    },
+    "EOrderMobileDisplayStatus": {
+      "Created": "Created",
+      "Approved": "Approved",
+      "AwaitingShipping": "Awaiting Shipping",
+      "Shipped": "Shipped",
+      "Delivered": "Delivering",
+      "Completed": "Completed",
+      "Cancelled": "Cancelled"
+    }
+    
+  },
+  "NSReturnOrder": {
+    "EReturnOrderStatus": {
+      "PendingApproval": "Pending approval",
+      "InProgress": "In progress",
+      "PartialReturn": "Partial return",
+      "Returned": "Returned",
+      "Cancelled": "Cancelled"
+    },
+    "EReturnType": {
+      "CustomerReturn": "Return order",
+      "QualityClaim": "Quality claim",
+      "ReturnBroken": "Broken return"
+    }
+  },
+  "NSShipment": {
+    "EShipmentStatus": {
+      "InProgress": "In progress",
+      "Cancelled": "Cancelled",
+      "Completed": "Completed",
+      "PartiallyDelivered": "Partially delivered",
+      "FullyDelivered": "Fully delivered",
+      "Delivered": "Delivered",
+      "Shipped": "Shipping",
+      "New": "New",
+      "Created": "Created",
+      "Approved": "Approved"
+    },
+    "EShipmentMobileDisplayStatus": {
+      "AwaitingShipping": "Awaiting Shipping",
+      "Shipped": "Shipped",
+      "Delivering": "Delivering",
+      "Completed": "Completed",
+      "Cancelled": "Cancelled"
+    },
+    "EShipmentDeliveryMethod": {
+      "Delivery": "Delivery",
+      "Pickup": "Pickup"
+    }
+  }
+}

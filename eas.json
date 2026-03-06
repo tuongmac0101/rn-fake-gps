@@ -1,0 +1,85 @@
+{
+  "cli": {
+    "version": ">= 16.17.4",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "local": {
+      "environment": "development",
+      "channel": "local",
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "APP_ENV": "development"
+      },
+      "android": {
+        "buildType": "apk"
+      },
+      "ios": {
+        "simulator": true
+      }
+    },
+    "local-device": {
+      "environment": "development",
+      "channel": "local-device",
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "APP_ENV": "development"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "development": {
+      "environment": "development",
+      "channel": "development",
+      "distribution": "internal",
+      "env": {
+        "APP_ENV": "development"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview": {
+      "environment": "preview",
+      "channel": "preview",
+      "autoIncrement": true,
+      "env": {
+        "APP_ENV": "preview"
+      }
+    },
+    "production": {
+      "environment": "production",
+      "channel": "production",
+      "autoIncrement": true,
+      "env": {
+        "APP_ENV": "production"
+      }
+    },
+    "apk-release": {
+      "environment": "production",
+      "channel": "apk-release",
+      "distribution": "internal",
+      "env": {
+        "APP_ENV": "release"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "release": {
+      "environment": "production",
+      "channel": "release",
+      "autoIncrement": true,
+      "env": {
+        "APP_ENV": "release"
+      }
+    }
+  },
+  "submit": {
+    "production": {},
+    "release": {}
+  }
+}

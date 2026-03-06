@@ -1,0 +1,1 @@
+{"title":"Thông tin cá nhân","email":{"label":"Email"},"phoneNumber":{"label":"Số điện thoại"},"theme":{"label":"Chế độ","light":"Sáng","dark":"Tối","toggle":"Bật chế độ {{mode}}"},"action":{"logout":"Đăng xuất"},"changeLanguage":{"title":"Ngôn ngữ","action":"Chuyển"}}
