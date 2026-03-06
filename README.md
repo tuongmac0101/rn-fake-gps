@@ -52,3 +52,4 @@ eas update --channel [channel-name] --message "[message]"
 ```bash
 npx expo install @react-navigation/native react-native-screens react-native-safe-area-context @react-navigation/native-stack @react-navigation/bottom-tabs
 ```
+# rn-fake-gps
