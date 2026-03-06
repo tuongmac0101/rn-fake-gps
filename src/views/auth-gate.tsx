@@ -4,17 +4,11 @@ import { useNavigation } from "@react-navigation/native";
 import { useAuthStore } from "~/stores/auth.store";
 import { useUserStore } from "~/stores/user.store";
 import { KitSpinner } from "~/@ui-kit";
-import { useMasterDataStore } from "~/stores/master-data";
-import { useBranchMappingStore } from "~/stores/branch-mapping";
-import { useSystemCodeStore } from "~/stores/system-code";
 
 export const AuthGate = () => {
   const nav = useNavigation(); // keep your typing if you have it
   const { access_token, isHydrated } = useAuthStore();
   const { getUserProfile } = useUserStore();
-  const { loadListAddress, loadSystemCodes } = useMasterDataStore();
-  const { loadBranchMappings } = useBranchMappingStore();
-  const { loadPriceTypes } = useSystemCodeStore();
 
   // Prevent duplicate navigations (StrictMode/double-effects, rapid store changes)
   const didNavigateRef = useRef(false);
@@ -37,17 +31,9 @@ export const AuthGate = () => {
 
     const run = async () => {
       try {
-        await Promise.all([
-          loadListAddress(),
-          loadSystemCodes(),
-        ]);
         if (access_token) {
           // Load profile first; if it throws (e.g., 401), go Login
           await getUserProfile();
-          await Promise.all([
-            loadBranchMappings(),
-            loadPriceTypes(),
-          ]);
           if (cancelled) return;
           safeReset("HomeTabs");
         } else {

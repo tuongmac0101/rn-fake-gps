@@ -60,6 +60,11 @@ export const generateAppByEnv = (appEnv: EAppEnv): ExpoConfig => {
       bundleIdentifier: packageId,
       infoPlist: {
         ITSAppUsesNonExemptEncryption: false,
+        NSLocationWhenInUseUsageDescription:
+          "Ứng dụng Fake GPS cần quyền vị trí để mô phỏng và hiển thị đường đi trên bản đồ.",
+        NSLocationAlwaysAndWhenInUseUsageDescription:
+          "Ứng dụng Fake GPS cần quyền vị trí (kể cả khi chạy nền) để mô phỏng tuyến đường.",
+        UIBackgroundModes: ["location"],
         NSCameraUsageDescription:
           "Ứng dụng cần quyền truy cập camera để chụp ảnh dán mẫu đơn hàng | thu hồi",
         NSPhotoLibraryUsageDescription:
@@ -75,9 +80,17 @@ export const generateAppByEnv = (appEnv: EAppEnv): ExpoConfig => {
       },
       edgeToEdgeEnabled: true,
       package: packageId,
+      config: {
+        googleMaps: {
+          apiKey: process.env.EXPO_PUBLIC_KEY_MAP_ANDROID ?? "",
+        },
+      },
       permissions: [
         "android.permission.READ_EXTERNAL_STORAGE",
         "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_BACKGROUND_LOCATION",
       ],
     },
     web: {

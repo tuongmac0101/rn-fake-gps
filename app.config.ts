@@ -14,6 +14,16 @@ export default ({ config: jsonConfig = {} }: ConfigContext): ExpoConfig => {
     userInterfaceStyle: "automatic",
     assetBundlePatterns: ["**/*"],
     jsEngine: "hermes", // faster build
-    plugins: ["expo-font", "expo-localization"],
+    plugins: [
+      "expo-font",
+      "expo-localization",
+      [
+        "expo-location",
+        {
+          locationAlwaysAndWhenInUsePermission:
+            "Ứng dụng Fake GPS cần quyền vị trí để mô phỏng và hiển thị đường đi trên bản đồ.",
+        },
+      ],
+    ],
   };
 };

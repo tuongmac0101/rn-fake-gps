@@ -1,67 +1,53 @@
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { HomeTabView } from "./home";
-import { ProfileTabView } from "./profile";
-import { OrderManagementTabView } from "./order-management";
-import { ApprovalOrderTabView } from "./approval-order";
-import { KitIcon } from "~/@ui-kit/kit-icon";
-import { useTranslation } from "react-i18next";
 import React from "react";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { HomeScreen, SavedRoutesScreen, HistoryScreen } from "~/screens";
+import { Map, Bookmark, History } from "lucide-react-native";
 
 const Tab = createBottomTabNavigator();
 
 export const HomeTabs = () => {
-  const { t } = useTranslation();
   return (
     <Tab.Navigator
-      initialRouteName="HomeTabView"
+      initialRouteName="Home"
       screenOptions={{
         headerShown: false,
+        tabBarActiveTintColor: "#3b82f6",
+        tabBarInactiveTintColor: "#94a3b8",
+        tabBarStyle: {
+          backgroundColor: "#fff",
+          borderTopColor: "#e2e8f0",
+          paddingTop: 8,
+        },
+        tabBarLabelStyle: { fontSize: 12, fontWeight: "600" },
       }}
     >
       <Tab.Screen
-        name="HomeTabView"
-        component={HomeTabView}
+        name="Home"
+        component={HomeScreen}
         options={{
-          title: t("common.homeTabs.home.title"),
+          title: "Bản đồ",
           tabBarIcon: ({ color, size }) => (
-            <KitIcon name="home-outline" size={size} color={color} />
+            <Map size={size} color={color} strokeWidth={2} />
           ),
         }}
       />
       <Tab.Screen
-        name="OrderManagementTabView"
-        component={OrderManagementTabView}
+        name="SavedRoutes"
+        component={SavedRoutesScreen}
         options={{
-          title: t("common.homeTabs.orderManagement.title"),
+          title: "Đã lưu",
           tabBarIcon: ({ color, size }) => (
-            <KitIcon name="shopping-cart-outline" size={size} color={color} />
+            <Bookmark size={size} color={color} strokeWidth={2} />
           ),
         }}
       />
       <Tab.Screen
-        name="ApprovalOrderTabView"
-        component={ApprovalOrderTabView}
+        name="History"
+        component={HistoryScreen}
         options={{
-          title: t("common.homeTabs.approvalOrder.title"),
+          title: "Lịch sử",
           tabBarIcon: ({ color, size }) => (
-            <KitIcon name="plus-circle-outline" size={size} color={color} />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="ProfileTabView"
-        component={ProfileTabView}
-        options={{
-          title: t("common.homeTabs.profile.title"),
-          tabBarIcon: ({ color, size }) => (
-            <KitIcon
-              name="person-outline"
-              style={{
-                width: size,
-                height: size,
-              }}
-              color={color}
-            />
+            <History size={size} color={color} strokeWidth={2} />
           ),
         }}
       />
