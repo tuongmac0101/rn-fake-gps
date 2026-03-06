@@ -33,7 +33,7 @@ export const generateAppByEnv = (appEnv: EAppEnv): ExpoConfig => {
       case EAppEnv.release:
         return {
           name: APP_NAME,
-          packageId: "com.apetechs.app",
+          packageId: BASE_PACKAGE_ID,
           scheme: APP_SCHEME,
         };
       default:

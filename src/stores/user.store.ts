@@ -40,10 +40,10 @@ export const useUserStore = create<UserState & UserAction>()((set) => ({
     // console.log("response getUserProfile", JSON.stringify(response, null, 2));
     return set({
       id: "fake-user-id",
-      user_name: "apetechs.sale@gmail.com",
+      user_name: "gpsfake.sale@gmail.com",
       name: "Fake",
       surname: "User",
-      email: "apetechs.sale@gmail.com",
+      email: "gpsfake.sale@gmail.com",
       // ...response,
     });
   },

@@ -4,7 +4,7 @@ import { useAuthStore } from "~/stores/auth.store";
 import { useToast } from "~/hooks";
 
 const initData = {
-  email: "apetechs.sale@gmail.com",
+  email: "gpsfake.sale@gmail.com",
   password: "Password@123",
 };
 

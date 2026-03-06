@@ -3,7 +3,7 @@
   "configVersion": 0,
   "workspaces": {
     "": {
-      "name": "apetechs-app",
+      "name": "gps-fake-app",
       "dependencies": {
         "@dev-plugins/react-query": "^0.3.1",
         "@eva-design/eva": "^2.2.0",
